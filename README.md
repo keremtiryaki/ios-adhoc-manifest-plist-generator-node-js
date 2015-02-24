@@ -8,7 +8,7 @@ Before deployment and before adding your new app
  Set the host config in index.js line:1
 
 
-You could run and add apps easly by upload form
+You could run and add apps easily by upload form
 
 
 OR
