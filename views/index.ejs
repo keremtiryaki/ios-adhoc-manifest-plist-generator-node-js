@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+  <a href="<%= host %>appbox/appbox.html">Open generated static apps page</a>
+
+  <div id="uploadForm" style="background-color:#ccc;padding:20px;">
+  		<h3>Add new app form</h3>
+      <form id="uploadForm"
+          enctype="multipart/form-data"
+          action="/api/addApp"
+          method="post">
+	  	Name:
+	  	<br>
+	  	<input type="text" name="appName" />
+	  	<br>
+	  	<br>
+	  	bundle Id:
+	  	<br>
+	  	<input type="text" name="bundleId" />
+	  	<br>
+	  	<br>
+	  	ipa File:
+	  	<br>
+      	<input type="file" name="ipaFile" />
+	  	<br>
+	  	<br>
+	  	provision File:
+	  	<br>
+	  	<input type="file" name="provisionFile" />
+	  	<br>
+	  	<br>
+      	<input type="submit" value="upload" name="submit">
+	  </form>
+  </div>	
+	
+	
+  </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+  <script>
+  /*/
+	$(document).ready(function() {
+		$('#uploadForm').submit(function() {
+			$(this).ajaxSubmit({
+				error: function(err) {
+					status('Error: ' + err.status);
+				},
+				success: function(response) {
+					console.log(response);
+					window.top.location.href = window.top.location.href;
+				}
+			});
+			return false;
+    	});    
+	});
+  /*/
+  </script>
+</html>

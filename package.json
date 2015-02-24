@@ -1,0 +1,29 @@
+{
+  "name": "file_upload",
+  "version": "0.0.1",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.10.2",
+    "multer": "~0.1.6",
+	"ejs": "~0.8.5",
+	"method-override": "2.3.0",
+	"body-parser": "1.9.2"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
