@@ -30,7 +30,7 @@ Run the command with your arguments
 For example 
 
 
-Your ipad file name: app.ipa
+Your ipa file name: app.ipa
 
 
 Your provision file name: newProvision.mobileprovision
